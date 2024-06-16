@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Just Rise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="lg:h-screen font-Roboto bg-[#e9ecf7ff]">
+    <main class="lg:flex gap-x-3 p-2 h-full">
+      <!-- sidebar -->
+      <section class="lg:w-[350px] p-3 shadow h-full bg-[#ffffffff] mb-3 lg:mb-0">
+        <div class="bg-gray-50 py-11 px-1">
+          <div class="flex justify-between items-center">
+            <div>
+              <img
+                src="./assets/img/justrisetech.svg"
+                class="w-12 h-12 object-cover"
+                alt="just rise Logo"
+              />
+            </div>
+            <div>
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <span class="text-[#76767aff] font-semibold">Olivia</span>
+                  <h5 class="text-sm text-[#969798d0] text-end font-semibold">online</h5>
+                </div>
+                <div class="relative">
+                  <img
+                    src="./assets/img/dash/user.png"
+                    class="w-12 h-12 object-cover"
+                    alt="User Image"
+                  />
+                  <span class="absolute bottom-0 right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+         <div>
+            <h4 class="text-[#cdced1ff] font-semibold">APPS</h4>
+         </div>
+         <div>
+            <div class="flex items-center gap-x-4 mt-3 mb-3 hover:bg-blue-50 bg-opacity-35 cursor-pointer p-2">
+               <img src="./assets/img/dash/icons8-dashboard-48.png" class="text-[#6f8dc7ff] w-6 h-6 object-cover" alt="dash">
+               <span class=" text-[#588aee] font-bold">Dashboard</span>
+            </div>
+            <div class="flex items-center gap-x-4 mt-3 mb-3 hover:bg-blue-50 bg-opacity-35 cursor-pointer p-2">
+               <img src="./assets/img/dash/icons8-mailbox-50.png" class="text-[#6f8dc7ff] w-6 h-6 object-cover" alt="dash">
+               <div class="flex justify-between items-center w-full">
+                  <span class=" text-[#84878cff] font-bold">MailBox</span>
+                  <h5 class="text-sm text-[#e7e7e7] text-end  bg-[#f54958ff] px-2 font-bold  rounded-full">87</h5>
+               </div>
+            </div>
+            <div class="flex items-center gap-x-4 mt-3 mb-3 hover:bg-blue-50 bg-opacity-35 cursor-pointer p-2">
+               <img src="./assets/img/dash/icons8-file-50.png" class="text-[#6f8dc7ff] w-6 h-6 object-cover" alt="dash">
+               <span class=" text-[#84878cff] font-bold">File Manager</span>
+            </div>
+            <div class="flex items-center gap-x-4 mt-3 mb-3 hover:bg-blue-50 bg-opacity-35 cursor-pointer p-2">
+               <img src="./assets/img/dash/icons8-calender-64.png" class="text-[#6f8dc7ff] w-6 h-6 object-cover" alt="dash">
+               <div class="flex justify-between items-center w-full">
+                  <span class=" text-[#84878cff] font-bold">Calender</span>
+                  <h5 class="text-sm text-[#e7e7e7] text-end  bg-[#4eab46ff] px-2 font-bold  rounded-full">14</h5>
+               </div>
+            </div>
+            <div class="flex items-center gap-x-4 mt-3 mb-3 hover:bg-blue-50 bg-opacity-35 cursor-pointer p-2">
+               <img src="./assets/img/dash/icons8-todo-list-50.png" class="text-[#6f8dc7ff] w-6 h-6 object-cover" alt="dash">
+               <span class=" text-[#84878cff] font-bold">Todo</span>
+            </div>
+            <a href="index.html" class="flex items-center gap-x-4 mt-3 mb-3 hover:bg-blue-50 bg-opacity-35 cursor-pointer p-2">
+               <img src="./assets/img/dash/icons8-logout-48.png" class="text-[#6f8dc7ff] w-6 h-6 object-cover" alt="dash">
+               <span class=" text-[#84878cff] font-bold">Logout</span>
+            </a>
+         </div>
+        </div>
+      </section>
+      <!-- navbar -->
+      <section class="border w-full h-full">
+        <div class=" px-6 py-5 bg-[#ffffffff] md:m-5 mt-3 md:mt-0  rounded-lg shadow-md flex justify-between items-center">
+          <div class="flex gap-x-6 text-xl">
+            <div><i class="fa-solid fa-chevron-left text-[#858585ff] mr-2"></i></div>
+            <div><i class="fa-solid fa-plus text-[#858585ff] mr-2"></i></i></div>
+            <div><i class="fa-solid fa-location-arrow text-[#858585ff] mr-2"></i></div>
+          </div>
+          <div>
+            <div class="">
+              <ul class="flex items-center gap-x-5 cursor-pointer">
+                <li class="text-[#6d7073ff] ">Applications</li>
+                <li class="text-[#bababaff] hover:text-[#6d7073ff] hidden lg:block">Reports</li>
+                <li class="text-[#bababaff] hover:text-[#6d7073ff] hidden lg:block">Projects</li>
+                <li><i class="fa-solid fa-magnifying-glass text-[#919191ff] hidden lg:block"></i></li>
+                <div>
+                  <img src="./assets/img/dash/icons8-us-96.png" class="w-12 h-12 " alt="us">
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      <!-- main content -->
+       <section class="xl:p-9 w-full">
+        <div>
+          <h1 class="font-RobotoCondensed font-bold text-3xl mt-3 md:mt">Dashboard</h1>
+        </div>
+        <div class="border border-[#d3d9e8ff] mt-5 mb-5"></div>
+
+        <div class=" p-4 h-[750px] overflow-y-scroll">
+          <div class="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-5 mb-4">
+
+            <div class="bg-white p-5 border flex items-center rounded-lg shadow">
+              <div class="bg-[#dceffc] px-5 py-3 rounded">
+                <i class="fa-solid fa-dollar-sign text-[#4373ccff] text-xl"></i>
+              </div>
+              <div class="w-full ml-3">
+                <div class="flex justify-between w-full items-center">
+                  <div>
+                    <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Today's sales</h3>
+                  </div>
+                  <div>
+                    <div class="bg-[#fae3e6] px-3 py-1 flex items-center gap-x-1 rounded">
+                      <i class="fa-solid fa-chevron-down text-[#ed2828] font-bold"></i>
+                      <h5 class="text-[#ed2828] font-bold">4%</h5>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="font-bold text-xl font-RobotoCondensed">$ 38,211</h2>
+                <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">471 Orders Total</h6>
+              </div>
+            </div>
+  
+            <div class="bg-white p-5 border flex items-center rounded-lg shadow">
+              <div class="bg-[#fff3e3] px-5 py-3 rounded">
+                <i class="fa-solid fa-user text-[#f29d3d] text-xl"></i>
+              </div>
+              <div class="w-full ml-3">
+                <div class="flex justify-between w-full items-center">
+                  <div>
+                    <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Active users</h3>
+                  </div>
+                  <div>
+                    <div class="bg-[#d5f5e2] px-3 py-1 flex items-center gap-x-1 rounded">
+                      <i class="fa-solid fa-chevron-down text-[#26d06a] font-bold"></i>
+                      <h5 class="text-[#26d06a] font-bold">12%</h5>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="font-bold text-xl font-RobotoCondensed">$ 23,481</h2>
+                <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">790 unique this month</h6>
+              </div>
+            </div>
+  
+            <div class="bg-white p-5 border flex items-center rounded-lg shadow">
+              <div class="bg-[#fce3e6] px-5 py-3 rounded">
+                <i class="fa-solid fa-download text-[#fa485d] text-xl"></i>
+              </div>
+              <div class="w-full ml-3">
+                <div class="flex justify-between w-full items-center">
+                  <div>
+                    <h3 class="uppercase font-bold text-[#aeb1bd] text-xs">Downloads</h3>
+                  </div>
+                  <div>
+                    <div class="bg-[#d5f5e2] px-3 py-1 flex items-center gap-x-1 rounded">
+                      <i class="fa-solid fa-chevron-down text-[#26d06a] font-bold"></i>
+                      <h5 class="text-[#26d06a] font-bold">7%</h5>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="font-bold text-xl font-RobotoCondensed">$ 23,481</h2>
+                <h6 class="text-[11px] text-[#c3c5d4] font-semibold mt-1">790 unique this month</h6>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-x-3 gap-y-3">
+
+            <div class="bg-white shadow p-5 rounded-lg">
+              <div class=" flex justify-between">
+                <span class="text-[#4c4052] font-bold">Active Tasks</span>
+                <div class="p-1 bg-[#e8fff2] text-xs rounded px-2">
+                  <span class="font-bold text-[#7db084]">14 Completed</span>
+                </div>
+              </div>
+              
+              <h6 class="text-[#acb6c2] text-xs mt-1">Showing 5 out of 23 active tasks.</h6>
+
+              <div class="mt-4">
+                
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#e3fcef] px-3 py-2 rounded">
+                    <i class="fa-regular fa-newspaper text-[#6ca660]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Dashboard UI optimizations</span>
+                    <h5 class="text-gray-400 text-xs">Oskar Hudson</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#def1ff] px-3 py-2 rounded">
+                    <i class="fa-solid fa-shield-halved  text-[#327cdb]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Mailbox cleanup</span>
+                    <h5 class="text-gray-400 text-xs">Woodrow Hawkins</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#e4e3ff] px-3 py-2 rounded">
+                    <i class="fa-regular fa-clock text-[#818be3]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Header scroll bugfix</span>
+                    <h5 class="text-gray-400 text-xs">Sky Meyers</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#fcf5e1] px-3 py-2 rounded">
+                    <i class="fa-solid fa-earth-europe text-[#eb9850]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">Localizations for file manager</span>
+                    <h5 class="text-gray-400 text-xs">Oskar Hudson</h5>
+                  </div>
+                </div>
+                <div class="flex gap-x-4 mt-3">
+                  <div class="bg-[#fce3e6] px-3 py-2 rounded">
+                    <i class="fa-solid fa-earth-europe text-[#f04861]"></i>
+                  </div>
+                  <div>
+                    <span class="font-semibold text-gray-800 font-Rubik">New E-Commerce UX/UI design</span>
+                    <h5 class="text-gray-400 text-xs">Oskar Hudson</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="bg-white shadow p-5 rounded-lg">
+              <div class=" flex justify-between">
+                <span class="text-[#4c4052] font-bold">Todo</span>
+                <div class="p-1 bg-[#e8fff2] text-xs rounded px-2">
+                  <span class="font-bold text-[#7db084]">14 Completed</span>
+                </div>
+              </div>
+              
+              <h6 class="text-[#acb6c2] text-xs mt-1">Showing 5 out of 23 active tasks.</h6>
+
+              <div class="mt-4">
+
+                <div class="flex items-center gap-x-4 mt-3">
+                  <input type="checkbox" name="" class="w-5 h-5">
+                  <div>
+                    <h4 class="text-[#3e485c] font-bold">Dashboard UI optimizations</h4>
+                    <span class="text-[#b9bcc4] font-semibold">Oskar Hudson</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-x-4 mt-3">
+                  <input type="checkbox" checked name="" class="w-5 h-5">
+                  <div>
+                    <h4 class="text-[#3e485c] font-bold">Mailbox cleanup</h4>
+                    <span class="text-[#b9bcc4] font-semibold">Woodraw Hawkins</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-x-4 mt-3">
+                  <input type="checkbox" checked name="" class="w-5 h-5">
+                  <div>
+                    <h4 class="text-[#3e485c] font-bold">Header scroll bugfix</h4>
+                    <span class="text-[#b9bcc4] font-semibold">Sky Meyers</span>
+                  </div>
+                </div>
+                
+                <div class="flex items-center gap-x-4 mt-3">
+                  <input type="checkbox" name="" class="w-5 h-5">
+                  <div>
+                    <h4 class="text-[#3e485c] font-bold">Localizations for file manager</h4>
+                    <span class="text-[#b9bcc4] font-semibold">Oskar Hudson</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-x-4 mt-3">
+                  <input type="checkbox" checked name="" class="w-5 h-5 ">
+                  <div>
+                    <h4 class="text-[#3e485c] font-bold">New E-commerce UX/UI design</h4>
+                    <span class="text-[#b9bcc4] font-semibold">Oskar Hudson</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bg-white shadow p-5 rounded-lg">
+              <div class=" flex justify-between">
+                <span class="text-[#4c4052] font-bold">In Progress Tasks</span>
+                <div class="p-1 bg-[#e8fff2] text-xs rounded px-2">
+                  <span class="font-bold text-[#7db084]">37% total</span>
+                </div>
+              </div>
+              
+              <h6 class="text-[#acb6c2] text-xs mt-1">Showing 5 out of 9 progress tasks</h6>
+
+              <div class="mt-4">
+
+                <div class="flex items-center gap-x-4 mt-3 ">
+                  <div class="bg-[#e3fcf0] px-3 py-2 rounded">
+                    <i class="fa-solid fa-chalkboard text-[#73bf7f]"></i>
+                  </div>
+                  <div class="w-full">
+                    <span class="font-semibold text-[#5c453c] font-Rubik text-sm">Dashboard UI optimizations</span>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 ">
+                      <div class="bg-[#246bf0] h-1.5 rounded-full" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-x-4 mt-3 ">
+                  <div class="bg-[#e1effa] px-3 py-2 rounded">
+                    <i class="fa-solid fa-shield-halved text-[#4971c9]"></i>
+                  </div>
+                  <div class="w-full">
+                    <span class="font-semibold text-[#5c453c] font-Rubik text-sm">Mailbox cleanup</span>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 ">
+                      <div class="bg-[#246bf0] h-1.5 rounded-full" style="width: 55%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-x-4 mt-3 ">
+                  <div class="bg-[#e0e1ff] px-3 py-2 rounded">
+                    <i class="fa-regular fa-clock text-[#6b69cf]"></i>
+                  </div>
+                  <div class="w-full">
+                    <span class="font-semibold text-[#5c453c] font-Rubik text-sm">Mailbox cleanup</span>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 ">
+                      <div class="bg-[#246bf0] h-1.5 rounded-full" style="width: 8%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-x-4 mt-3 ">
+                  <div class="bg-[#fff4e3] px-3 py-2 rounded">
+                    <i class="fa-solid fa-earth-americas text-[#e39f46]"></i>
+                  </div>
+                  <div class="w-full">
+                    <span class="font-semibold text-[#5c453c] font-Rubik text-sm">Localizations for file manager</span>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 ">
+                      <div class="bg-[#246bf0] h-1.5 rounded-full" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-x-4 mt-3 ">
+                  <div class="bg-[#fae6e8] px-3 py-2 rounded">
+                    <i class="fa-solid fa-microphone-lines-slash text-[#f74853]"></i>
+                  </div>
+                  <div class="w-full">
+                    <span class="font-semibold text-[#5c453c] font-Rubik text-sm">New E-Commerce UX/UI design</span>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4 ">
+                      <div class="bg-[#246bf0] h-1.5 rounded-full" style="width: 18%"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="lg:flex  mt-7  w-full">
+            <div id="chart" class=" bg-[#ffffff] p- rounded-lg lg:rounded-s-lg shadow w-full"></div>
+            <div class="bg-[#f2f7fa] p-3 lg:w-[40%] lg:rounded-e-lg mt-3 lg:mt-0">
+              <div class="flex justify-between">
+                <span class="font-bold">Report</span>
+                <span class="bg-[#deeefc] px-2 py-1 rounded text-[#7faae3] text-xs">Updated 5 min age</span>
+              </div>
+              <p class="text-[#686e73bf] text-sm mt-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reiciendis</p>
+
+              <div class="mt-3">
+                <div class="rounded-t-lg border-b bg-[#ffffff] border-[#e6e9eb] p-4">
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 font-semibold">Neptune - v1.0</span>
+                    <span class="text-[#8cba8c] font-semibold">14% <i class="fa-solid fa-chevron-up"></i></span>
+                  </div>
+                </div>
+                <div class="border-b bg-[#ffffff] border-[#e6e9eb] p-4">
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 font-semibold">Space - v1.2</span>
+                    <span class="text-[#f2aabd] font-semibold">7% <i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                </div>
+                <div class="rounded-t-lg border-b bg-[#ffffff] border-[#e6e9eb] p-4">
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 font-semibold">Lime - v1.0.3</span>
+                    <span class="text-[#8cba8c] font-semibold">21% <i class="fa-solid fa-chevron-up"></i></span>
+                  </div>
+                </div>
+                <div class="rounded-t-lg border-b bg-[#ffffff] border-[#e6e9eb] p-4">
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 font-semibold">Cricl - 2.3</span>
+                    <span class="text-[#8cba8c] font-semibold">17% <i class="fa-solid fa-chevron-up"></i></span>
+                  </div>
+                </div>
+                <div class="border-b bg-[#ffffff] border-[#e6e9eb] p-4  rounded-b-lg">
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 font-semibold">Connect - v1.7</span>
+                    <span class="text-[#f2aabd] font-semibold">3% <i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden lg:block">
+            <div class=" mt-3 flex">
+              <div class="flex gap-x-3">
+                <div class="flex items-center bg-white p-3 rounded-lg shadow ">
+                  <img src="assets/img/justrisetech.svg" class="w-52 h-52 object-contain" alt="logo">
+                <div class="flex-col">
+                <h4 class="text-gray-800 font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus.</h4>
+  
+                  <span class="text-xs text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam expedita nulla voluptate fuga, odio explicabo illo incidunt iure, 
+                    ducimus quae reprehenderit, delectus consequuntur molestiae sed sequi 
+                    laudantium ullam quidem exercitationem at quibusdam doloribus. Quis</span>
+                </div>
+                
+              </div>
+              <div class="w-[900px] bg-white p-3 rounded-lg shadow">
+                <div class="flex justify-between">
+                  <span class="font-bold text-[#3e4b57]">Connection Request</span>
+                  <span class="text-gray-600 bg-[#fae8c8] text-xs px-2 py-1 rounded">17 min ago</span>
+                </div>
+                <div class="flex mt-5 gap-x-3 p-3">
+                  <img src="assets/img/justrisetech.svg" class="w-20 h-20 bg-[#f9f7fa] rounded" alt="logo foot">
+                  <div>
+                    <h5 class="text-black">Woodrow Hawkins</h5>
+                    <span class="text-xs text-gray-500">45 Mutual connections senior Go Developer at Google</span>
+                  </div>
+                </div>
+  
+                <div class="mt-3 flex justify-center gap-x-6 w-full">
+                  <button type="button" class="bg-[#def1ff] hover:bg-[#7ba6c567] px-11 py-1 rounded font-semibold text-[#3d73c4]"><i class="fa-solid fa-check "></i> Accept</button>
+                  <button type="button" class="bg-[#fce3e6] hover:bg-[#bd556140] px-11 py-1 rounded font-semibold text-[#e07e8b]"><i class="fa-solid fa-x"></i> Decline</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+     </section>
+      </section>
+
+    </main>
+    
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
